@@ -5,63 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Welcome</title>
+    <title>Regan Temudo</title>
   </head>
   <body>
+    <canvas id="matrix"></canvas>
     <div class="container">
       <nav>
         <ul>
-          <li id="about">/about</li>
-          <li id="contact">/contact</li>
+          <li id="about" class="nav-item">/about</li>
+          <li id="projects" class="nav-item">/projects</li>
+          <li id="contact" class="nav-item">/contact</li>
         </ul>
       </nav>
-
       <main>
-        <h1>system@society:~$<span class="cursor">|</span></h1>
+        <h1 id="typed-heading"><span id="typed-text"></span><span class="cursor">|</span></h1>
+        <p class="tagline">// developer. creator. problem solver.</p>
         <h3>Find me online:</h3>
-        <ul>
-          <li>
-            <a
-              href="https://www.youtube.com/@regan_temudo"
-              target="_blank"
-              >YouTube</a
-            >
-          </li>
-          <li>
-            <a href="https://twitter.com/Regan_Temudo" target="_blank"
-              >Twitter</a
-            >
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/regan-temudo/" target="_blank"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a href="https://www.instagram.com/regan_temudo" target="_blank"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/regantemudo" target="_blank">Github</a>
-          </li>
-          
+        <ul class="social-links">
+          <li><a href="https://www.youtube.com/@regan_temudo" target="_blank"><span class="link-prefix">▶</span> YouTube</a></li>
+          <li><a href="https://twitter.com/Regan_Temudo" target="_blank"><span class="link-prefix">◆</span> Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/regan-temudo/" target="_blank"><span class="link-prefix">◈</span> LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/regan_temudo" target="_blank"><span class="link-prefix">◉</span> Instagram</a></li>
+          <li><a href="https://github.com/regantemudo" target="_blank"><span class="link-prefix">⌥</span> Github</a></li>
         </ul>
       </main>
+      <footer class="site-footer"><span id="clock"></span></footer>
     </div>
 
     <div class="hidden">
       <div id="about-content">
-        <h2>about-me:$<span class="cursor">|</span></h2>
-        <p>Myself Regan Temudo </p>
+        <h2>about-me:~$<span class="cursor">|</span></h2>
+        <p>Hey, I'm <strong>Regan Temudo</strong> — a developer and content creator passionate about technology and building things on the internet.</p>
+        <div class="skill-section">
+          <p class="section-label">$ cat skills.txt</p>
+          <ul class="skill-list">
+            <li>Web Development</li>
+            <li>JavaScript / HTML / CSS</li>
+            <li>Content Creation</li>
+            <li>Open Source</li>
+          </ul>
+        </div>
+        <div class="skill-section">
+          <p class="section-label">$ echo $STATUS</p>
+          <p class="status-line">▶ Available for collaboration</p>
+        </div>
+      </div>
+
+      <div id="projects-content">
+        <h2>projects:~$<span class="cursor">|</span></h2>
+        <p class="section-label">$ ls -la ./projects</p>
+        <ul class="project-list">
+          <li class="project-item">
+            <a href="https://github.com/regantemudo" target="_blank">
+              <span class="proj-name">regantemudo.github.io</span>
+              <span class="proj-desc">// personal portfolio & hub</span>
+            </a>
+          </li>
+          <li class="project-item">
+            <span class="proj-name coming-soon">more_projects/</span>
+            <span class="proj-desc">// coming soon...</span>
+          </li>
+        </ul>
+        <p class="section-label" style="margin-top:16px;">$ open <a href="https://github.com/regantemudo" target="_blank">github.com/regantemudo</a></p>
       </div>
 
       <div id="contact-content">
-        <h2>contact-me:$<span class="cursor">|</span></h2>
-        <p>You can contact me at the email and social media below</p>
-        <ul>
-          <li>Email: str46114@gmail.com</li>
-        </ul>
+        <h2>contact-me:~$<span class="cursor">|</span></h2>
+        <p>Reach out anytime — always open to interesting conversations.</p>
+        <p class="section-label">$ cat contact.json</p>
+        <pre class="code-block">{
+  "email": "str46114@gmail.com",
+  "twitter": "@Regan_Temudo",
+  "linkedin": "regan-temudo"
+}</pre>
+        <p class="section-label" style="margin-top:12px;">$ send_mail <a href="mailto:str46114@gmail.com">str46114@gmail.com</a></p>
       </div>
     </div>
 
